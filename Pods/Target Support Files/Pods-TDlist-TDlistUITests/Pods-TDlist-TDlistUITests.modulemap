@@ -1,0 +1,6 @@
+framework module Pods_TDlist_TDlistUITests {
+  umbrella header "Pods-TDlist-TDlistUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

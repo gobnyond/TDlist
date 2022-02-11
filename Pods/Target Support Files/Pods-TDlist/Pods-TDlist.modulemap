@@ -1,0 +1,6 @@
+framework module Pods_TDlist {
+  umbrella header "Pods-TDlist-umbrella.h"
+
+  export *
+  module * { export * }
+}
