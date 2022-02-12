@@ -20,6 +20,7 @@
 		F11708CB27B4F25300F02BE1 /* TDlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708CA27B4F25300F02BE1 /* TDlistTests.swift */; };
 		F11708D527B4F25300F02BE1 /* TDlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708D427B4F25300F02BE1 /* TDlistUITests.swift */; };
 		F11708D727B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708D627B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift */; };
+		F11708E427B7F60900F02BE1 /* ButtonRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708E327B7F60900F02BE1 /* ButtonRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		F11708D027B4F25300F02BE1 /* TDlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11708D427B4F25300F02BE1 /* TDlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDlistUITests.swift; sourceTree = "<group>"; };
 		F11708D627B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F11708E327B7F60900F02BE1 /* ButtonRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRadius.swift; sourceTree = "<group>"; };
 		F662AA13894E4897C5878386 /* Pods_TDlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,7 +115,6 @@
 				379A81B6AE87C4A7C0B35D79 /* Pods-TDlistTests.debug.xcconfig */,
 				5E952FF9253191C49ED816A9 /* Pods-TDlistTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +151,7 @@
 				F11708BE27B4F25300F02BE1 /* LaunchScreen.storyboard */,
 				F11708C127B4F25300F02BE1 /* Info.plist */,
 				F11708B927B4F25100F02BE1 /* TDlist.xcdatamodeld */,
+				F11708E327B7F60900F02BE1 /* ButtonRadius.swift */,
 			);
 			path = TDlist;
 			sourceTree = "<group>";
@@ -414,6 +416,7 @@
 				F11708B127B4F25100F02BE1 /* AppDelegate.swift in Sources */,
 				F11708B327B4F25100F02BE1 /* SceneDelegate.swift in Sources */,
 				F11708BB27B4F25100F02BE1 /* TDlist.xcdatamodeld in Sources */,
+				F11708E427B7F60900F02BE1 /* ButtonRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
