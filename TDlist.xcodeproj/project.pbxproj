@@ -21,6 +21,7 @@
 		F11708D527B4F25300F02BE1 /* TDlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708D427B4F25300F02BE1 /* TDlistUITests.swift */; };
 		F11708D727B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708D627B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift */; };
 		F11708E427B7F60900F02BE1 /* ButtonRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708E327B7F60900F02BE1 /* ButtonRadius.swift */; };
+		F11708E827BC0D5900F02BE1 /* DeleteStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11708E727BC0D5900F02BE1 /* DeleteStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		F11708D427B4F25300F02BE1 /* TDlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDlistUITests.swift; sourceTree = "<group>"; };
 		F11708D627B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F11708E327B7F60900F02BE1 /* ButtonRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRadius.swift; sourceTree = "<group>"; };
+		F11708E727BC0D5900F02BE1 /* DeleteStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeleteStoryboard.storyboard; sourceTree = "<group>"; };
 		F662AA13894E4897C5878386 /* Pods_TDlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,15 +145,15 @@
 		F11708AF27B4F25100F02BE1 /* TDlist */ = {
 			isa = PBXGroup;
 			children = (
-				F11708B027B4F25100F02BE1 /* AppDelegate.swift */,
-				F11708B227B4F25100F02BE1 /* SceneDelegate.swift */,
-				F11708B427B4F25100F02BE1 /* ViewController.swift */,
-				F11708B627B4F25100F02BE1 /* Main.storyboard */,
-				F11708BC27B4F25300F02BE1 /* Assets.xcassets */,
-				F11708BE27B4F25300F02BE1 /* LaunchScreen.storyboard */,
 				F11708C127B4F25300F02BE1 /* Info.plist */,
+				F11708BC27B4F25300F02BE1 /* Assets.xcassets */,
 				F11708B927B4F25100F02BE1 /* TDlist.xcdatamodeld */,
-				F11708E327B7F60900F02BE1 /* ButtonRadius.swift */,
+				F11708EC27BC0E0100F02BE1 /* Controller */,
+				F11708EA27BC0D8900F02BE1 /* Model */,
+				F11708E927BC0D7600F02BE1 /* View */,
+				F11708B627B4F25100F02BE1 /* Main.storyboard */,
+				F11708BE27B4F25300F02BE1 /* LaunchScreen.storyboard */,
+				F11708E727BC0D5900F02BE1 /* DeleteStoryboard.storyboard */,
 			);
 			path = TDlist;
 			sourceTree = "<group>";
@@ -171,6 +173,31 @@
 				F11708D627B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift */,
 			);
 			path = TDlistUITests;
+			sourceTree = "<group>";
+		};
+		F11708E927BC0D7600F02BE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F11708EA27BC0D8900F02BE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F11708EC27BC0E0100F02BE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F11708B027B4F25100F02BE1 /* AppDelegate.swift */,
+				F11708B227B4F25100F02BE1 /* SceneDelegate.swift */,
+				F11708B427B4F25100F02BE1 /* ViewController.swift */,
+				F11708E327B7F60900F02BE1 /* ButtonRadius.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +311,7 @@
 			files = (
 				F11708C027B4F25300F02BE1 /* LaunchScreen.storyboard in Resources */,
 				F11708BD27B4F25300F02BE1 /* Assets.xcassets in Resources */,
+				F11708E827BC0D5900F02BE1 /* DeleteStoryboard.storyboard in Resources */,
 				F11708B827B4F25100F02BE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
