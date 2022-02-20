@@ -8,5 +8,6 @@
 import Foundation
 
 struct DeleteRequest: Decodable {
-    var selectedIndex: Int
+    var no: Int
+    var userid: String
 }

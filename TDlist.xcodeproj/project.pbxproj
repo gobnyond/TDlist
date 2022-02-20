@@ -27,7 +27,6 @@
 		F1D2A02F27C2931F00F2F683 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A02E27C2931F00F2F683 /* LoginResponse.swift */; };
 		F1D2A03127C2933000F2F683 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A03027C2933000F2F683 /* SignUpRequest.swift */; };
 		F1D2A03327C2933F00F2F683 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A03227C2933F00F2F683 /* SignUpResponse.swift */; };
-		F1D2A03727C2939C00F2F683 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A03627C2939C00F2F683 /* Home.swift */; };
 		F1D2A03927C293B100F2F683 /* AddRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A03827C293B100F2F683 /* AddRequest.swift */; };
 		F1D2A03B27C293BB00F2F683 /* AddResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A03A27C293BB00F2F683 /* AddResponse.swift */; };
 		F1D2A03D27C293CE00F2F683 /* DeleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A03C27C293CE00F2F683 /* DeleteRequest.swift */; };
@@ -36,6 +35,10 @@
 		F1D2A04327C293F800F2F683 /* DetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A04227C293F800F2F683 /* DetailResponse.swift */; };
 		F1D2A04727C2962F00F2F683 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A04627C2962F00F2F683 /* UserRequest.swift */; };
 		F1D2A04927C2963B00F2F683 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A04827C2963B00F2F683 /* UserResponse.swift */; };
+		F1D2A04B27C2A32800F2F683 /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A04A27C2A32800F2F683 /* HomeResponse.swift */; };
+		F1D2A04D27C2A33800F2F683 /* HomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A04C27C2A33800F2F683 /* HomeRequest.swift */; };
+		F1D2A04F27C2A85700F2F683 /* IdDuplicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A04E27C2A85700F2F683 /* IdDuplicationRequest.swift */; };
+		F1D2A05127C2A86700F2F683 /* IdDuplicationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A05027C2A86700F2F683 /* IdDuplicationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +88,6 @@
 		F1D2A02E27C2931F00F2F683 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		F1D2A03027C2933000F2F683 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		F1D2A03227C2933F00F2F683 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
-		F1D2A03627C2939C00F2F683 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F1D2A03827C293B100F2F683 /* AddRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequest.swift; sourceTree = "<group>"; };
 		F1D2A03A27C293BB00F2F683 /* AddResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddResponse.swift; sourceTree = "<group>"; };
 		F1D2A03C27C293CE00F2F683 /* DeleteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRequest.swift; sourceTree = "<group>"; };
@@ -94,6 +96,10 @@
 		F1D2A04227C293F800F2F683 /* DetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResponse.swift; sourceTree = "<group>"; };
 		F1D2A04627C2962F00F2F683 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		F1D2A04827C2963B00F2F683 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		F1D2A04A27C2A32800F2F683 /* HomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
+		F1D2A04C27C2A33800F2F683 /* HomeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequest.swift; sourceTree = "<group>"; };
+		F1D2A04E27C2A85700F2F683 /* IdDuplicationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdDuplicationRequest.swift; sourceTree = "<group>"; };
+		F1D2A05027C2A86700F2F683 /* IdDuplicationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdDuplicationResponse.swift; sourceTree = "<group>"; };
 		F662AA13894E4897C5878386 /* Pods_TDlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -218,7 +224,10 @@
 				F1D2A02E27C2931F00F2F683 /* LoginResponse.swift */,
 				F1D2A03027C2933000F2F683 /* SignUpRequest.swift */,
 				F1D2A03227C2933F00F2F683 /* SignUpResponse.swift */,
-				F1D2A03627C2939C00F2F683 /* Home.swift */,
+				F1D2A04E27C2A85700F2F683 /* IdDuplicationRequest.swift */,
+				F1D2A05027C2A86700F2F683 /* IdDuplicationResponse.swift */,
+				F1D2A04C27C2A33800F2F683 /* HomeRequest.swift */,
+				F1D2A04A27C2A32800F2F683 /* HomeResponse.swift */,
 				F1D2A03827C293B100F2F683 /* AddRequest.swift */,
 				F1D2A03A27C293BB00F2F683 /* AddResponse.swift */,
 				F1D2A03C27C293CE00F2F683 /* DeleteRequest.swift */,
@@ -485,14 +494,17 @@
 			files = (
 				F11708B527B4F25100F02BE1 /* ViewController.swift in Sources */,
 				F1D2A04327C293F800F2F683 /* DetailResponse.swift in Sources */,
+				F1D2A05127C2A86700F2F683 /* IdDuplicationResponse.swift in Sources */,
 				F1D2A04127C293EA00F2F683 /* DetailRequest.swift in Sources */,
 				F1D2A03327C2933F00F2F683 /* SignUpResponse.swift in Sources */,
 				F1D2A03D27C293CE00F2F683 /* DeleteRequest.swift in Sources */,
-				F1D2A03727C2939C00F2F683 /* Home.swift in Sources */,
+				F1D2A04D27C2A33800F2F683 /* HomeRequest.swift in Sources */,
 				F11708B127B4F25100F02BE1 /* AppDelegate.swift in Sources */,
 				F11708B327B4F25100F02BE1 /* SceneDelegate.swift in Sources */,
+				F1D2A04B27C2A32800F2F683 /* HomeResponse.swift in Sources */,
 				F1D2A02D27C2930C00F2F683 /* LoginRequest.swift in Sources */,
 				F11708BB27B4F25100F02BE1 /* TDlist.xcdatamodeld in Sources */,
+				F1D2A04F27C2A85700F2F683 /* IdDuplicationRequest.swift in Sources */,
 				F1D2A03127C2933000F2F683 /* SignUpRequest.swift in Sources */,
 				F1D2A03B27C293BB00F2F683 /* AddResponse.swift in Sources */,
 				F1D2A03927C293B100F2F683 /* AddRequest.swift in Sources */,
