@@ -13,8 +13,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userIdTextfield: UITextField!
     @IBOutlet weak var userPwTextfield: UITextField!
     
-    func postLogin(_ parameters: LoginRequest) {
-        AF.request("13.209.10.30:4004/user/login", method: .post, parameters: parameters, encoder: JSONParameterEncoder(), headers: nil)
+    func postLogin(_ parameters: LoginRequest) { //"13.209.10.30:4004/user/login"
+        AF.request("http://13.209.10.30:4004/user/login", method: .post, parameters: parameters, encoder: JSONParameterEncoder(), headers: nil)
             .validate()
             .responseDecodable(of: LoginResponse.self) { [self] response in
                 switch response.result {
@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
             
                     if response.isSuccess == true {
                         print("로그인 성공")
+                        
                        
                     } else {
                         print("로그인 실패")
@@ -53,6 +54,7 @@ class LoginViewController: UIViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "SignUpViewController") as!
         SignUpViewController
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
     
