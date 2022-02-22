@@ -8,8 +8,8 @@
 import Foundation
 
 struct SignUpRequest: Encodable {
+    var username: String
     var userid: String
     var userpw: String
     var userpw_check: String
-    var username: String
 }

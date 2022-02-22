@@ -78,6 +78,7 @@
                             <constraint firstItem="wu5-4X-jDk" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="30" id="O3C-jc-0G4"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="98Q-dR-UiH" secondAttribute="trailing" constant="30" id="SHa-Oe-oM6"/>
                             <constraint firstItem="0tu-9a-qNW" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="30" id="Uzc-bb-2VX"/>
+                            <constraint firstItem="4dk-Fw-vhK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YCp-b1-q3B" secondAttribute="leading" symbolic="YES" id="XHN-OG-kV9"/>
                             <constraint firstItem="98Q-dR-UiH" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="30" id="gf6-vg-nCm"/>
                             <constraint firstItem="QNm-VW-c2F" firstAttribute="centerX" secondItem="kBR-N3-e4f" secondAttribute="centerX" id="jdY-hw-ECO"/>
                             <constraint firstItem="98Q-dR-UiH" firstAttribute="top" secondItem="wu5-4X-jDk" secondAttribute="bottom" constant="30" id="nn5-fB-CRC"/>
@@ -120,6 +121,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signupActionButton:" destination="JL6-NZ-LuA" eventType="touchUpInside" id="muY-ku-dvK"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSu-S4-1mS">
                                 <rect key="frame" x="30" y="341" width="354" height="40"/>
@@ -182,6 +186,12 @@
                             <constraint firstItem="wSu-S4-1mS" firstAttribute="leading" secondItem="J3C-DV-74H" secondAttribute="leading" constant="30" id="yPQ-YF-cOK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="signIdTextfield" destination="6cU-oF-bBF" id="kyb-XA-fPD"/>
+                        <outlet property="signNameTextfield" destination="wSu-S4-1mS" id="Oow-Qh-u1S"/>
+                        <outlet property="signPwTextfield" destination="HtM-aw-w0H" id="yYS-l1-uW1"/>
+                        <outlet property="signPwcheckTextfield" destination="ufS-uz-UMD" id="piO-bu-aQC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJG-fE-Mdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

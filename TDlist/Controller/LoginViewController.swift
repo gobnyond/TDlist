@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userIdTextfield: UITextField!
     @IBOutlet weak var userPwTextfield: UITextField!
     
-    func postLogin(_ parameters: LoginRequest) { //"13.209.10.30:4004/user/login"
+    func postLogin(_ parameters: LoginRequest) {
         AF.request("http://13.209.10.30:4004/user/login", method: .post, parameters: parameters, encoder: JSONParameterEncoder(), headers: nil)
             .validate()
             .responseDecodable(of: LoginResponse.self) { [self] response in
