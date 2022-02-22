@@ -22,7 +22,11 @@ class LoginViewController: UIViewController {
             
                     if response.isSuccess == true {
                         print("로그인 성공")
-                        
+                        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+                        let vc = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as!
+                        HomeViewController
+                        vc.modalPresentationStyle = .fullScreen
+                        self.present(vc, animated: true, completion: nil)
                        
                     } else {
                         print("로그인 실패")

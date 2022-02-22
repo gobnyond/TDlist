@@ -8,6 +8,7 @@ target 'TDlist' do
 pod 'Alamofire'
 pod 'FSCalendar'
 pod 'SnapKit'
+pod 'IQKeyboardManagerSwift'
 
   # Pods for TDlist
 

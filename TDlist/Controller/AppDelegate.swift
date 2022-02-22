@@ -7,14 +7,18 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        IQKeyboardManager.shared.enable = true
+        //라이브러리 사용
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        //별도 코드 작성 없이 키보드 위에 Toolbar 삽입
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        //화면 아무 곳이나 터치하면 키보드가 자동으로 내려갈 수 있도록 함
         return true
     }
 
