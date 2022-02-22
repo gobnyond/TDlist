@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct IdDuplicationRequest: Decodable {
+struct IdDuplicationRequest: Encodable {
     var userid: String
 }

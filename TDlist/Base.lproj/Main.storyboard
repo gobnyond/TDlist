@@ -36,6 +36,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginActionButton:" destination="M6K-Tn-kEv" eventType="touchUpInside" id="bHH-6W-F4n"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98Q-dR-UiH">
                                 <rect key="frame" x="30" y="639" width="354" height="34"/>
@@ -50,6 +53,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signupActionButton:" destination="M6K-Tn-kEv" eventType="touchUpInside" id="0iU-CD-rIJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNm-VW-c2F">
                                 <rect key="frame" x="165.5" y="361" width="83.5" height="30.5"/>
@@ -77,6 +83,10 @@
                             <constraint firstItem="4dk-Fw-vhK" firstAttribute="trailing" secondItem="0tu-9a-qNW" secondAttribute="trailing" id="z0C-EG-3Rj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userIdTextfield" destination="wu5-4X-jDk" id="uBA-T1-NXU"/>
+                        <outlet property="userPwTextfield" destination="98Q-dR-UiH" id="izt-TN-dho"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDw-Wh-9Jw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

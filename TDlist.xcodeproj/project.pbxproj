@@ -12,7 +12,6 @@
 		DCC1C21946053BD79AC1CC4F /* Pods_TDlist_TDlistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C58FE00412F13B4BD5DE69 /* Pods_TDlist_TDlistUITests.framework */; };
 		F11708B127B4F25100F02BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708B027B4F25100F02BE1 /* AppDelegate.swift */; };
 		F11708B327B4F25100F02BE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708B227B4F25100F02BE1 /* SceneDelegate.swift */; };
-		F11708B527B4F25100F02BE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708B427B4F25100F02BE1 /* ViewController.swift */; };
 		F11708B827B4F25100F02BE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11708B627B4F25100F02BE1 /* Main.storyboard */; };
 		F11708BB27B4F25100F02BE1 /* TDlist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F11708B927B4F25100F02BE1 /* TDlist.xcdatamodeld */; };
 		F11708BD27B4F25300F02BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11708BC27B4F25300F02BE1 /* Assets.xcassets */; };
@@ -39,6 +38,8 @@
 		F1D2A04D27C2A33800F2F683 /* HomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A04C27C2A33800F2F683 /* HomeRequest.swift */; };
 		F1D2A04F27C2A85700F2F683 /* IdDuplicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A04E27C2A85700F2F683 /* IdDuplicationRequest.swift */; };
 		F1D2A05127C2A86700F2F683 /* IdDuplicationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A05027C2A86700F2F683 /* IdDuplicationResponse.swift */; };
+		F1D2A05327C2B5A400F2F683 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A05227C2B5A400F2F683 /* LoginViewController.swift */; };
+		F1D2A05527C2B5B500F2F683 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A05427C2B5B500F2F683 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +71,6 @@
 		F11708AD27B4F25100F02BE1 /* TDlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11708B027B4F25100F02BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F11708B227B4F25100F02BE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F11708B427B4F25100F02BE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F11708B727B4F25100F02BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F11708BA27B4F25100F02BE1 /* TDlist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TDlist.xcdatamodel; sourceTree = "<group>"; };
 		F11708BC27B4F25300F02BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +100,8 @@
 		F1D2A04C27C2A33800F2F683 /* HomeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequest.swift; sourceTree = "<group>"; };
 		F1D2A04E27C2A85700F2F683 /* IdDuplicationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdDuplicationRequest.swift; sourceTree = "<group>"; };
 		F1D2A05027C2A86700F2F683 /* IdDuplicationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdDuplicationResponse.swift; sourceTree = "<group>"; };
+		F1D2A05227C2B5A400F2F683 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F1D2A05427C2B5B500F2F683 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F662AA13894E4897C5878386 /* Pods_TDlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -245,8 +247,9 @@
 			children = (
 				F11708B027B4F25100F02BE1 /* AppDelegate.swift */,
 				F11708B227B4F25100F02BE1 /* SceneDelegate.swift */,
-				F11708B427B4F25100F02BE1 /* ViewController.swift */,
 				F11708E327B7F60900F02BE1 /* ButtonRadius.swift */,
+				F1D2A05227C2B5A400F2F683 /* LoginViewController.swift */,
+				F1D2A05427C2B5B500F2F683 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -492,7 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F11708B527B4F25100F02BE1 /* ViewController.swift in Sources */,
+				F1D2A05527C2B5B500F2F683 /* SignUpViewController.swift in Sources */,
 				F1D2A04327C293F800F2F683 /* DetailResponse.swift in Sources */,
 				F1D2A05127C2A86700F2F683 /* IdDuplicationResponse.swift in Sources */,
 				F1D2A04127C293EA00F2F683 /* DetailRequest.swift in Sources */,
@@ -502,6 +505,7 @@
 				F11708B127B4F25100F02BE1 /* AppDelegate.swift in Sources */,
 				F11708B327B4F25100F02BE1 /* SceneDelegate.swift in Sources */,
 				F1D2A04B27C2A32800F2F683 /* HomeResponse.swift in Sources */,
+				F1D2A05327C2B5A400F2F683 /* LoginViewController.swift in Sources */,
 				F1D2A02D27C2930C00F2F683 /* LoginRequest.swift in Sources */,
 				F11708BB27B4F25100F02BE1 /* TDlist.xcdatamodeld in Sources */,
 				F1D2A04F27C2A85700F2F683 /* IdDuplicationRequest.swift in Sources */,
