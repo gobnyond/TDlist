@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bt-zT-0bt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="1507"/>
+            <point key="canvasLocation" x="1658" y="1507"/>
         </scene>
         <!--list-->
         <scene sceneID="WXt-Rg-aYH">
@@ -76,13 +76,14 @@
             </objects>
             <point key="canvasLocation" x="-90" y="1122"/>
         </scene>
-        <!--LIST-->
+        <!--Navigation Controller-->
         <scene sceneID="X67-qL-CH9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E03-Zm-UTT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="LIST" id="Yck-1u-2GJ">
+                    <tabBarItem key="tabBarItem" title="" id="Yck-1u-2GJ">
+                        <imageReference key="image" image="checklist" catalog="system" symbolScale="large"/>
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageReference key="selectedImage" image="checklist" catalog="system" symbolScale="default"/>
+                        <imageReference key="selectedImage" image="checklist" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3WL-qR-3o0">
@@ -98,11 +99,15 @@
             </objects>
             <point key="canvasLocation" x="800.00000000000011" y="786.83035714285711"/>
         </scene>
-        <!--ME-->
+        <!--Navigation Controller-->
         <scene sceneID="QXA-Ge-88r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Sx-P1-U3a" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ME" selectedImage="person.fill" catalog="system" id="B0D-wf-kRS"/>
+                    <tabBarItem key="tabBarItem" title="" id="B0D-wf-kRS">
+                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="selectedImage" image="person.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nmw-B9-v9l">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
