@@ -21,6 +21,11 @@
 		F11708D727B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708D627B4F25300F02BE1 /* TDlistUITestsLaunchTests.swift */; };
 		F11708E427B7F60900F02BE1 /* ButtonRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11708E327B7F60900F02BE1 /* ButtonRadius.swift */; };
 		F119546427C54C0900AFDED8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119546327C54C0900AFDED8 /* HomeViewController.swift */; };
+		F1851DDF27C6ACFE00BFCD33 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1851DDE27C6ACFE00BFCD33 /* AddViewController.swift */; };
+		F1851DE127C6AD0900BFCD33 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1851DE027C6AD0900BFCD33 /* DetailViewController.swift */; };
+		F1851DE427C6AD3700BFCD33 /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1851DE227C6AD3700BFCD33 /* HomeListTableViewCell.swift */; };
+		F1851DE527C6AD3700BFCD33 /* HomeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1851DE327C6AD3700BFCD33 /* HomeListTableViewCell.xib */; };
+		F1851DE727C6AD8C00BFCD33 /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1851DE627C6AD8C00BFCD33 /* HomeListViewController.swift */; };
 		F1D2A02927BFD55D00F2F683 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D2A02827BFD55D00F2F683 /* Home.storyboard */; };
 		F1D2A02D27C2930C00F2F683 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A02C27C2930C00F2F683 /* LoginRequest.swift */; };
 		F1D2A02F27C2931F00F2F683 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2A02E27C2931F00F2F683 /* LoginResponse.swift */; };
@@ -84,6 +89,11 @@
 		F11708E327B7F60900F02BE1 /* ButtonRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRadius.swift; sourceTree = "<group>"; };
 		F119546027C549CC00AFDED8 /* TDlist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TDlist.entitlements; sourceTree = "<group>"; };
 		F119546327C54C0900AFDED8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F1851DDE27C6ACFE00BFCD33 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		F1851DE027C6AD0900BFCD33 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F1851DE227C6AD3700BFCD33 /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
+		F1851DE327C6AD3700BFCD33 /* HomeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListTableViewCell.xib; sourceTree = "<group>"; };
+		F1851DE627C6AD8C00BFCD33 /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		F1D2A02827BFD55D00F2F683 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F1D2A02C27C2930C00F2F683 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		F1D2A02E27C2931F00F2F683 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -252,6 +262,11 @@
 				F1D2A05227C2B5A400F2F683 /* LoginViewController.swift */,
 				F1D2A05427C2B5B500F2F683 /* SignUpViewController.swift */,
 				F119546327C54C0900AFDED8 /* HomeViewController.swift */,
+				F1851DDE27C6ACFE00BFCD33 /* AddViewController.swift */,
+				F1851DE027C6AD0900BFCD33 /* DetailViewController.swift */,
+				F1851DE227C6AD3700BFCD33 /* HomeListTableViewCell.swift */,
+				F1851DE327C6AD3700BFCD33 /* HomeListTableViewCell.xib */,
+				F1851DE627C6AD8C00BFCD33 /* HomeListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -366,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11708C027B4F25300F02BE1 /* LaunchScreen.storyboard in Resources */,
+				F1851DE527C6AD3700BFCD33 /* HomeListTableViewCell.xib in Resources */,
 				F1D2A02927BFD55D00F2F683 /* Home.storyboard in Resources */,
 				F11708BD27B4F25300F02BE1 /* Assets.xcassets in Resources */,
 				F11708B827B4F25100F02BE1 /* Main.storyboard in Resources */,
@@ -498,6 +514,8 @@
 			files = (
 				F1D2A05527C2B5B500F2F683 /* SignUpViewController.swift in Sources */,
 				F1D2A04327C293F800F2F683 /* DetailResponse.swift in Sources */,
+				F1851DE127C6AD0900BFCD33 /* DetailViewController.swift in Sources */,
+				F1851DDF27C6ACFE00BFCD33 /* AddViewController.swift in Sources */,
 				F1D2A05127C2A86700F2F683 /* IdDuplicationResponse.swift in Sources */,
 				F1D2A04127C293EA00F2F683 /* DetailRequest.swift in Sources */,
 				F1D2A03327C2933F00F2F683 /* SignUpResponse.swift in Sources */,
@@ -512,9 +530,11 @@
 				F11708BB27B4F25100F02BE1 /* TDlist.xcdatamodeld in Sources */,
 				F1D2A04F27C2A85700F2F683 /* IdDuplicationRequest.swift in Sources */,
 				F1D2A03127C2933000F2F683 /* SignUpRequest.swift in Sources */,
+				F1851DE427C6AD3700BFCD33 /* HomeListTableViewCell.swift in Sources */,
 				F1D2A03B27C293BB00F2F683 /* AddResponse.swift in Sources */,
 				F1D2A03927C293B100F2F683 /* AddRequest.swift in Sources */,
 				F1D2A04727C2962F00F2F683 /* UserRequest.swift in Sources */,
+				F1851DE727C6AD8C00BFCD33 /* HomeListViewController.swift in Sources */,
 				F1D2A03F27C293D800F2F683 /* DeleteResponse.swift in Sources */,
 				F11708E427B7F60900F02BE1 /* ButtonRadius.swift in Sources */,
 				F1D2A02F27C2931F00F2F683 /* LoginResponse.swift in Sources */,
