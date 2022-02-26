@@ -46,6 +46,17 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    
+    @IBAction func loginAutoButton(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+            //if sender.isSelected == true{
+                //isAutoLogin = true
+            //}else{
+              //  isAutoLogin = false
+            //}
+        }
+    
+    
     @IBAction func loginActionButton(_ sender: UIButton) {
         let id = userIdTextfield.text ?? ""
         let pw = userPwTextfield.text ?? ""

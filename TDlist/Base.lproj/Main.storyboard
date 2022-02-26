@@ -58,15 +58,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dk-Fw-vhK">
-                                <rect key="frame" x="323" y="671" width="71" height="28.666666666666629"/>
+                                <rect key="frame" x="342" y="679" width="47" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="signupActionButton:" destination="M6K-Tn-kEv" eventType="touchUpInside" id="0iU-CD-rIJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYz-2Y-q0J">
+                                <rect key="frame" x="25" y="682" width="83" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" 자동 로그인" image="toggle_off">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" image="toggle_on"/>
+                                <connections>
+                                    <action selector="loginAutoButton:" destination="M6K-Tn-kEv" eventType="touchUpInside" id="aZS-Wh-MCi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,19 +86,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0tu-9a-qNW" firstAttribute="top" secondItem="98Q-dR-UiH" secondAttribute="bottom" constant="30" id="8dk-Au-tQd"/>
+                            <constraint firstItem="YCp-b1-q3B" firstAttribute="bottom" secondItem="oYz-2Y-q0J" secondAttribute="bottom" constant="30" id="COF-ug-yel"/>
+                            <constraint firstItem="YCp-b1-q3B" firstAttribute="bottom" secondItem="4dk-Fw-vhK" secondAttribute="bottom" constant="30" id="HbX-uG-zHc"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="wu5-4X-jDk" secondAttribute="trailing" constant="20" id="N2N-rH-H1L"/>
                             <constraint firstItem="wu5-4X-jDk" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="20" id="O3C-jc-0G4"/>
+                            <constraint firstItem="4dk-Fw-vhK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oYz-2Y-q0J" secondAttribute="trailing" constant="8" symbolic="YES" id="PLp-Ic-ldu"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="98Q-dR-UiH" secondAttribute="trailing" constant="20" id="SHa-Oe-oM6"/>
                             <constraint firstItem="0tu-9a-qNW" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="20" id="Uzc-bb-2VX"/>
-                            <constraint firstItem="4dk-Fw-vhK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YCp-b1-q3B" secondAttribute="leading" symbolic="YES" id="XHN-OG-kV9"/>
                             <constraint firstItem="98Q-dR-UiH" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="20" id="gf6-vg-nCm"/>
                             <constraint firstItem="QNm-VW-c2F" firstAttribute="centerX" secondItem="kBR-N3-e4f" secondAttribute="centerX" id="jdY-hw-ECO"/>
+                            <constraint firstItem="oYz-2Y-q0J" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="25" id="nJG-sz-AHt"/>
                             <constraint firstItem="98Q-dR-UiH" firstAttribute="top" secondItem="wu5-4X-jDk" secondAttribute="bottom" constant="30" id="nn5-fB-CRC"/>
-                            <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="4dk-Fw-vhK" secondAttribute="trailing" constant="20" id="pbF-sT-8UF"/>
+                            <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="4dk-Fw-vhK" secondAttribute="trailing" constant="25" id="pbF-sT-8UF"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="0tu-9a-qNW" secondAttribute="trailing" constant="20" id="t5Z-xJ-Fhf"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="bottom" secondItem="0tu-9a-qNW" secondAttribute="bottom" constant="70" id="uLm-2p-yUl"/>
                             <constraint firstItem="QNm-VW-c2F" firstAttribute="top" secondItem="YCp-b1-q3B" secondAttribute="top" constant="100" id="yeB-iD-vGF"/>
-                            <constraint firstItem="4dk-Fw-vhK" firstAttribute="top" secondItem="0tu-9a-qNW" secondAttribute="bottom" constant="5" id="zPf-8a-mPf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -199,6 +213,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="toggle_off" width="24" height="24"/>
+        <image name="toggle_on" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
