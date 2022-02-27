@@ -13,7 +13,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userIdTextfield: UITextField!
     @IBOutlet weak var userPwTextfield: UITextField!
     @IBOutlet weak var autoLogin: UISwitch!
-    //autoLogin.transform = CGAffineTransform(scaleX: 0.75, y: 0.75); //스위치 크기
     
     func postLogin(_ parameters: LoginRequest) {
         AF.request("http://13.209.10.30:4004/user/login", method: .post, parameters: parameters, encoder: JSONParameterEncoder(), headers: nil)
@@ -46,6 +45,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        autoLogin.transform = CGAffineTransform(scaleX: 0.55, y: 0.55); //스위치 크기
         
         if let save_id:String = UserDefaults.standard.object(forKey: "save_id") as? String,
            let save_pw:String = UserDefaults.standard.object(forKey: "save_pw") as? String {
@@ -58,6 +58,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginActionButton(_ sender: UIButton) {
         
+        //autoLogin.transform = CGAffineTransform(scaleX: 0.5, y: 0.5); //스위치 크기
         let id = userIdTextfield.text ?? ""
         let pw = userPwTextfield.text ?? ""
         

@@ -76,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CsY-BW-cG2">
-                                <rect key="frame" x="83" y="833" width="51" height="31"/>
+                                <rect key="frame" x="75" y="834" width="51" height="31"/>
                                 <color key="onTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </switch>
                         </subviews>
@@ -90,16 +90,17 @@
                             <constraint firstItem="wu5-4X-jDk" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="20" id="O3C-jc-0G4"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="98Q-dR-UiH" secondAttribute="trailing" constant="20" id="SHa-Oe-oM6"/>
                             <constraint firstItem="0tu-9a-qNW" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="20" id="Uzc-bb-2VX"/>
+                            <constraint firstItem="CsY-BW-cG2" firstAttribute="leading" secondItem="tbL-3q-Rx9" secondAttribute="trailing" id="cyv-S2-VIA"/>
+                            <constraint firstItem="YCp-b1-q3B" firstAttribute="bottom" secondItem="CsY-BW-cG2" secondAttribute="bottom" constant="27" id="e1x-AY-l2w"/>
                             <constraint firstItem="98Q-dR-UiH" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="20" id="gf6-vg-nCm"/>
                             <constraint firstItem="tbL-3q-Rx9" firstAttribute="leading" secondItem="YCp-b1-q3B" secondAttribute="leading" constant="20" id="i8b-6i-J7J"/>
                             <constraint firstItem="QNm-VW-c2F" firstAttribute="centerX" secondItem="kBR-N3-e4f" secondAttribute="centerX" id="jdY-hw-ECO"/>
                             <constraint firstItem="98Q-dR-UiH" firstAttribute="top" secondItem="wu5-4X-jDk" secondAttribute="bottom" constant="30" id="nn5-fB-CRC"/>
-                            <constraint firstItem="YCp-b1-q3B" firstAttribute="bottom" secondItem="CsY-BW-cG2" secondAttribute="bottom" constant="28" id="o8u-WT-tMc"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="4dk-Fw-vhK" secondAttribute="trailing" constant="25" id="pbF-sT-8UF"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="trailing" secondItem="0tu-9a-qNW" secondAttribute="trailing" constant="20" id="t5Z-xJ-Fhf"/>
                             <constraint firstItem="YCp-b1-q3B" firstAttribute="bottom" secondItem="0tu-9a-qNW" secondAttribute="bottom" constant="70" id="uLm-2p-yUl"/>
-                            <constraint firstItem="CsY-BW-cG2" firstAttribute="leading" secondItem="tbL-3q-Rx9" secondAttribute="trailing" constant="8" symbolic="YES" id="vJE-Zk-9zu"/>
                             <constraint firstItem="QNm-VW-c2F" firstAttribute="top" secondItem="YCp-b1-q3B" secondAttribute="top" constant="100" id="yeB-iD-vGF"/>
+                            <constraint firstItem="4dk-Fw-vhK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CsY-BW-cG2" secondAttribute="trailing" constant="8" symbolic="YES" id="ysO-Rf-N7D"/>
                         </constraints>
                     </view>
                     <connections>
