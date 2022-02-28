@@ -45,6 +45,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.topItem?.title = ""
+        
         autoLogin.transform = CGAffineTransform(scaleX: 0.55, y: 0.55); //스위치 크기
         
         if let save_id:String = UserDefaults.standard.object(forKey: "save_id") as? String,
@@ -89,7 +93,9 @@ class LoginViewController: UIViewController {
         let vc = storyBoard.instantiateViewController(withIdentifier: "SignUpViewController") as!
         SignUpViewController
         vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+        //self.present(vc, animated: true, completion: nil)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
