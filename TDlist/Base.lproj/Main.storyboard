@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uYH-1Y-StK">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M6K-Tn-kEv" customClass="LoginViewController" customModule="TDlist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBR-N3-e4f">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wu5-4X-jDk">
-                                <rect key="frame" x="20" y="625" width="388" height="44"/>
+                                <rect key="frame" x="20" y="474" width="374" height="42.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wu5-4X-jDk" secondAttribute="height" multiplier="177:20" id="nrF-yt-V7Z"/>
                                 </constraints>
@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tu-9a-qNW" customClass="ButtonRadius" customModule="TDlist" customModuleProvider="target">
-                                <rect key="frame" x="20" y="772.66666666666663" width="388" height="49.333333333333371"/>
+                                <rect key="frame" x="20" y="618.33333333333337" width="374" height="47.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0tu-9a-qNW" secondAttribute="height" multiplier="118:15" id="gcq-ZY-uUp"/>
                                 </constraints>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98Q-dR-UiH">
-                                <rect key="frame" x="20" y="699" width="388" height="43.666666666666629"/>
+                                <rect key="frame" x="20" y="546.33333333333337" width="374" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="98Q-dR-UiH" secondAttribute="height" multiplier="177:20" id="kGz-fP-rSU"/>
                                 </constraints>
@@ -52,13 +52,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNm-VW-c2F">
-                                <rect key="frame" x="172.33333333333334" y="188" width="83.666666666666657" height="30.666666666666657"/>
+                                <rect key="frame" x="165.33333333333334" y="144" width="83.666666666666657" height="30.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dk-Fw-vhK">
-                                <rect key="frame" x="356" y="835" width="47" height="27"/>
+                                <rect key="frame" x="342" y="679" width="47" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -70,13 +70,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자동 로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbL-3q-Rx9">
-                                <rect key="frame" x="20" y="842" width="55" height="15"/>
+                                <rect key="frame" x="20" y="686" width="55" height="15"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CsY-BW-cG2">
-                                <rect key="frame" x="75" y="834" width="51" height="31"/>
+                                <rect key="frame" x="75" y="678" width="51" height="31"/>
                                 <color key="onTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </switch>
                         </subviews>
@@ -119,11 +119,11 @@
             <objects>
                 <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JL6-NZ-LuA" customClass="SignUpViewController" customModule="TDlist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U6u-bZ-4aT">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jW5-6L-GMg" customClass="ButtonRadius" customModule="TDlist" customModuleProvider="target">
-                                <rect key="frame" x="20" y="772.66666666666663" width="388" height="49.333333333333371"/>
+                                <rect key="frame" x="20" y="618.33333333333337" width="374" height="47.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jW5-6L-GMg" secondAttribute="height" multiplier="118:15" id="NkM-Nu-qcD"/>
                                 </constraints>
@@ -142,7 +142,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSu-S4-1mS">
-                                <rect key="frame" x="20" y="477.33333333333331" width="388" height="43.666666666666686"/>
+                                <rect key="frame" x="20" y="329.33333333333331" width="374" height="42.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wSu-S4-1mS" secondAttribute="height" multiplier="177:20" id="Wr6-lR-UAa"/>
                                 </constraints>
@@ -150,7 +150,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HtM-aw-w0H">
-                                <rect key="frame" x="20" y="625" width="388" height="44"/>
+                                <rect key="frame" x="20" y="474" width="374" height="42.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="HtM-aw-w0H" secondAttribute="height" multiplier="177:20" id="rhj-fr-Ono"/>
                                 </constraints>
@@ -158,7 +158,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ufS-uz-UMD">
-                                <rect key="frame" x="20" y="699" width="388" height="43.666666666666629"/>
+                                <rect key="frame" x="20" y="546.33333333333337" width="374" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ufS-uz-UMD" secondAttribute="height" multiplier="177:20" id="b77-Yd-2gf"/>
                                 </constraints>
@@ -166,7 +166,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cU-oF-bBF">
-                                <rect key="frame" x="20" y="551" width="388" height="44"/>
+                                <rect key="frame" x="20" y="401.66666666666669" width="374" height="42.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6cU-oF-bBF" secondAttribute="height" multiplier="177:20" id="rxj-dS-a2k"/>
                                 </constraints>
@@ -174,7 +174,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sign up" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlI-6U-9PV">
-                                <rect key="frame" x="158.66666666666666" y="144" width="110.99999999999997" height="30.666666666666657"/>
+                                <rect key="frame" x="151.66666666666666" y="144" width="110.99999999999997" height="30.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -198,7 +198,7 @@
                             <constraint firstItem="ufS-uz-UMD" firstAttribute="leading" secondItem="J3C-DV-74H" secondAttribute="leading" constant="20" id="qeE-HH-cM3"/>
                             <constraint firstItem="J3C-DV-74H" firstAttribute="trailing" secondItem="ufS-uz-UMD" secondAttribute="trailing" constant="20" id="rNf-Zk-hNI"/>
                             <constraint firstItem="OlI-6U-9PV" firstAttribute="centerX" secondItem="U6u-bZ-4aT" secondAttribute="centerX" id="uiO-pI-5F8"/>
-                            <constraint firstItem="OlI-6U-9PV" firstAttribute="top" secondItem="J3C-DV-74H" secondAttribute="top" constant="100" id="wyV-kh-IB0"/>
+                            <constraint firstItem="OlI-6U-9PV" firstAttribute="top" secondItem="J3C-DV-74H" secondAttribute="top" constant="144" id="wyV-kh-IB0"/>
                             <constraint firstItem="wSu-S4-1mS" firstAttribute="leading" secondItem="J3C-DV-74H" secondAttribute="leading" constant="20" id="yPQ-YF-cOK"/>
                         </constraints>
                     </view>
@@ -219,7 +219,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uYH-1Y-StK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xpv-un-o4p">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
