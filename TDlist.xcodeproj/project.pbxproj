@@ -202,6 +202,7 @@
 				F11708B627B4F25100F02BE1 /* Main.storyboard */,
 				F1D2A02827BFD55D00F2F683 /* Home.storyboard */,
 				F11708BE27B4F25300F02BE1 /* LaunchScreen.storyboard */,
+				F1851DE327C6AD3700BFCD33 /* HomeListTableViewCell.xib */,
 			);
 			path = TDlist;
 			sourceTree = "<group>";
@@ -265,7 +266,6 @@
 				F1851DDE27C6ACFE00BFCD33 /* AddViewController.swift */,
 				F1851DE027C6AD0900BFCD33 /* DetailViewController.swift */,
 				F1851DE227C6AD3700BFCD33 /* HomeListTableViewCell.swift */,
-				F1851DE327C6AD3700BFCD33 /* HomeListTableViewCell.xib */,
 				F1851DE627C6AD8C00BFCD33 /* HomeListViewController.swift */,
 			);
 			path = Controller;

@@ -8,11 +8,20 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    @IBOutlet weak var detailtitleLabel: UILabel!
+    @IBOutlet weak var detaildateLabel: UILabel!
+    @IBOutlet weak var detailcontentLabel: UILabel!
+    
+    var detailtitle:String?
+    var detaildate:Int?
+    var detailcontent:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        detailtitleLabel.text = detailtitle
+        detaildateLabel.text = "\(detaildate ?? 0)"
+        detailcontentLabel.text = detailcontent
     }
     
 

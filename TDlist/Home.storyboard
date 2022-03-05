@@ -150,6 +150,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="list" id="z9q-gi-NvS"/>
+                    <connections>
+                        <outlet property="toDoListTable" destination="XUd-J7-OsI" id="cUk-Aj-Da8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxT-rr-KWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,6 +291,9 @@
                         <outlet property="ContentDetailLabel" destination="0QL-CJ-GWz" id="Eew-WF-fll"/>
                         <outlet property="DateDetailLabel" destination="iJy-IL-zSJ" id="Qnh-Tg-XVs"/>
                         <outlet property="TitleDetailLabel" destination="QUF-cj-VJc" id="E3a-mW-Qgh"/>
+                        <outlet property="detailcontentLabel" destination="iJy-IL-zSJ" id="3fF-36-OkH"/>
+                        <outlet property="detaildateLabel" destination="0QL-CJ-GWz" id="xcz-R2-gcV"/>
+                        <outlet property="detailtitleLabel" destination="QUF-cj-VJc" id="Hax-EB-k4S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfV-WR-Gs4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
