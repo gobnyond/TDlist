@@ -12,7 +12,7 @@ class HomeListViewController: UIViewController {
 
     @IBOutlet weak var toDoListTable: UITableView!
     
-    var todo: [todo] = []
+    var todo: [to] = []
     
     func postHome(_ parameters: HomeRequest) {
         AF.request("http://13.209.10.30:4004/todo/list", method: .post, parameters: parameters, encoder: JSONParameterEncoder(), headers: nil)
@@ -23,7 +23,7 @@ class HomeListViewController: UIViewController {
             
                     if response.isSuccess == true {
                         print("불러오기 성공")
-                        self.todo = response.list
+                        self.todo = response.todo
                         self.toDoListTable.reloadData()
                         //?
                     } else {
@@ -54,6 +54,7 @@ class HomeListViewController: UIViewController {
         self.toDoListTable.register(UINib(nibName: "HomeTodoTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTodoTableViewCell")
         
         let param = HomeRequest(userid: UserDefaults.standard.object(forKey: "save_id") as! String)
+        
         self.postHome(param)
     }
 

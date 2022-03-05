@@ -11,12 +11,13 @@ struct HomeResponse: Decodable {
     var isSuccess: Bool
     var code: Int
     var message: String
-    var list: [todo]
+    var todo: [to]
 }
 
-struct todo: Decodable {
-    var no: Int
+struct to: Decodable {
+    var no: Int?
     var title: String
-    var date: Int
     var content: String
+    var userid: String?
+    var date: Int
 }
