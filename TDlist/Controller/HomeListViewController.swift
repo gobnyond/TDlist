@@ -7,9 +7,16 @@
 
 import UIKit
 import Alamofire
+import FSCalendar
 
 class HomeListViewController: UIViewController {
 
+    @IBOutlet weak var calendar: FSCalendar!
+    //calendar.appearance.headerDateFormat = "YYYY년 M월"
+    //calendar.locale = Locale(identifier: "ko_KR")
+    //calendar.appearance.headerMinimumDissolvedAlpha = 0
+    
+    
     @IBOutlet weak var toDoListTable: UITableView!
     
     var todo: [to] = []
@@ -26,6 +33,10 @@ class HomeListViewController: UIViewController {
                         self.todo = response.todo
                         self.toDoListTable.reloadData()
                         //?
+                        let alert = UIAlertController(title: "", message: response.message, preferredStyle: .alert)
+                        let okButton = UIAlertAction (title: "확인",style: .default, handler: nil)
+                        alert.addAction(okButton)
+                        self.present(alert, animated:true)
                     } else {
                         print("불러오기 실패")
                         let alert = UIAlertController(title: "", message: response.message, preferredStyle: .alert)
@@ -43,8 +54,12 @@ class HomeListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        calendar.appearance.headerDateFormat = "YYYY년 M월"
+        calendar.locale = Locale(identifier: "ko_KR")
+        calendar.appearance.headerMinimumDissolvedAlpha = 0
+        
         self.navigationController?.navigationBar.tintColor = .black
-        self.navigationController?.navigationBar.topItem?.title = ""
+        // self.navigationController?.navigationBar.topItem?.title = ""
         
         toDoListTable.estimatedRowHeight = 50
         toDoListTable.rowHeight = UITableView.automaticDimension
@@ -94,5 +109,23 @@ extension HomeListViewController:UITableViewDelegate, UITableViewDataSource {
         
         }
     
-        
 }
+
+//class CalendarVC: UIViewController { @IBOutlet weak var calendarOrigin: FSCalendar!{
+   // didSet{
+     //   calendarOrigin.delegate = self
+        
+    //}
+    
+//}
+  //  @IBOutlet weak var calendarHeight: NSLayoutConstraint!
+    
+//}
+
+//extension CalendarVC : FSCalendarDelegate { // Calendar 주간, 월간 원활한 크기 변화를 위해
+  //  func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool){ calendarHeight.constant = bounds.height
+    //    self.view.layoutIfNeeded ()
+   // }
+    
+//}
+
