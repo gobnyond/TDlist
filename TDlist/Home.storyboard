@@ -31,6 +31,9 @@
                                     <constraint firstAttribute="height" constant="150" id="A1a-Q4-qjS"/>
                                 </constraints>
                                 <locale key="locale" localeIdentifier="ko_KR"/>
+                                <connections>
+                                    <action selector="addDatePickerAction:" destination="vEk-8w-6BP" eventType="valueChanged" id="qv2-4H-YdD"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="deadline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM3-SL-KJZ">
                                 <rect key="frame" x="25" y="118.33333333333333" width="89" height="20.333333333333329"/>
@@ -66,6 +69,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButton:" destination="vEk-8w-6BP" eventType="touchUpInside" id="Lp4-jS-hZq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TrE-PZ-5wd"/>
@@ -91,6 +97,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="add" id="I4Z-Vs-cL3"/>
+                    <connections>
+                        <outlet property="addDatePicker" destination="TDL-YO-J2F" id="dTO-6v-Kcj"/>
+                        <outlet property="addMemoTextView" destination="fI9-jt-hFB" id="JWi-1v-2uS"/>
+                        <outlet property="addTitleTextfield" destination="h60-7B-2sx" id="g9a-If-JNB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bt-zT-0bt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
