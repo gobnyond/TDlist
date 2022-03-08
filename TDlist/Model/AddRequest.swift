@@ -9,7 +9,7 @@ import Foundation
 
 struct AddRequest: Encodable {
     var title: String
-    var data: String
+    var date: String
     var userid: String
     var content: String
 }

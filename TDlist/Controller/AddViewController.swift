@@ -49,23 +49,25 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.tintColor = .black
     }
     
     @IBAction func addDatePickerAction(_ sender: UIDatePicker) {
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
-        todoDate = formatter.string(from: sender.date)
+        let datepk = sender
+        let dateFormet = DateFormatter()
+        dateFormet.dateFormat = "yyyy/MM/dd HH:mm"
+        todoDate = dateFormet.string(from:datepk.date)
     }
     
     
     @IBAction func addButton(_ sender: UIButton) {
         let title = addTitleTextfield.text ?? ""
-        guard let date = todoDate else { return }
+        guard let date = self.todoDate else {
+            print ("일정 없음")
+            return
+        }
         let memo = addMemoTextView.text ?? ""
         
-        let param = AddRequest(title: title, data: date, userid: UserDefaults.standard.object(forKey: "save_id") as! String, content: memo )
+        let param = AddRequest(title: title, date: date, userid: UserDefaults.standard.object(forKey: "save_id") as! String, content: memo )
             postAdd(param)
     }
     
