@@ -8,15 +8,12 @@
 import UIKit
 import Alamofire
 import FSCalendar
+import SnapKit
 
 class HomeListViewController: UIViewController {
 
     @IBOutlet weak var calendar: FSCalendar!
-    //calendar.appearance.headerDateFormat = "YYYY년 M월"
-    //calendar.locale = Locale(identifier: "ko_KR")
-    //calendar.appearance.headerMinimumDissolvedAlpha = 0
-    
-    
+    @IBOutlet weak var calendarHeight: NSLayoutConstraint!
     @IBOutlet weak var toDoListTable: UITableView!
     
     var todo: [to] = []
@@ -48,21 +45,40 @@ class HomeListViewController: UIViewController {
                     print("failure \(error.localizedDescription)")
               }
          }
-    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        calendar.delegate = self
+        calendar.dataSource = self
+        
         calendar.appearance.headerDateFormat = "YYYY년 M월"
         calendar.locale = Locale(identifier: "ko_KR")
         calendar.appearance.headerMinimumDissolvedAlpha = 0
+        calendar.scope = .month
+        calendar.scope = .week
+        
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeEvent(_:)))
+        swipeUp.direction = .up
+        self.view.addGestureRecognizer(swipeUp)
+
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeEvent(_:)))
+        swipeDown.direction = .down
+        self.view.addGestureRecognizer(swipeDown)
         
         self.navigationController?.navigationBar.tintColor = .black
-        // self.navigationController?.navigationBar.topItem?.title = ""
         
         toDoListTable.estimatedRowHeight = 50
         toDoListTable.rowHeight = UITableView.automaticDimension
+        
+    }
+}
+    
+    extension HomeListViewController : FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance {
+    public func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let dateFormatter = DateFormatter()
+        print(dateFormatter.string(from: date) + " 날짜가 선택되었습니다.")
         
         self.toDoListTable.delegate = self
         self.toDoListTable.dataSource = self
@@ -72,10 +88,26 @@ class HomeListViewController: UIViewController {
         
         self.postHome(param)
     }
-
+    // 날짜 선택 해제 시 콜백 메소드
+    public func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let dateFormatter = DateFormatter()
+        print(dateFormatter.string(from: date) + " 날짜가 선택해제 되었습니다.")    }
+    
+    public func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool){
+        if calendar.scope == .week {
+                    calendarHeight.constant = bounds.height
+                }
+                else if calendar.scope == .month {
+                    calendarHeight.constant = bounds.height
+                }
+        UIView.animate(withDuration: 0.5) {
+        self.view.layoutIfNeeded()
+        }
+    }
 }
 
-extension HomeListViewController:UITableViewDelegate, UITableViewDataSource {
+    
+extension HomeListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.todo.count
 }
@@ -109,23 +141,12 @@ extension HomeListViewController:UITableViewDelegate, UITableViewDataSource {
         
         }
     
+    @objc func swipeEvent(_ swipe: UISwipeGestureRecognizer) {
+
+        if swipe.direction == .up {
+                calendar.setScope(.week, animated: true)
+            } else if swipe.direction == .down {
+                calendar.setScope(.month, animated: true)
+        }
+    }
 }
-
-//class CalendarVC: UIViewController { @IBOutlet weak var calendarOrigin: FSCalendar!{
-   // didSet{
-     //   calendarOrigin.delegate = self
-        
-    //}
-    
-//}
-  //  @IBOutlet weak var calendarHeight: NSLayoutConstraint!
-    
-//}
-
-//extension CalendarVC : FSCalendarDelegate { // Calendar 주간, 월간 원활한 크기 변화를 위해
-  //  func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool){ calendarHeight.constant = bounds.height
-    //    self.view.layoutIfNeeded ()
-   // }
-    
-//}
-

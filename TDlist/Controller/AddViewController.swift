@@ -26,11 +26,11 @@ class AddViewController: UIViewController {
             
                     if response.isSuccess == true {
                         print("todo 성공")
-                        let storyBoard = UIStoryboard(name: "Home", bundle: nil)
-                        let vc = storyBoard.instantiateViewController(withIdentifier: "HomeListViewController") as!
-                        HomeListViewController
-                        vc.modalPresentationStyle = .fullScreen
-                        self.present(vc, animated: true, completion: nil)
+                        //let storyBoard = UIStoryboard(name: "Home", bundle: nil)
+                        //let vc = storyBoard.instantiateViewController(withIdentifier: "HomeListViewController") as! HomeListViewController
+                        //vc.modalPresentationStyle = .fullScreen
+                        //self.present(vc, animated: true, completion: nil)
+                        
                 
                        
                     } else {
@@ -54,7 +54,7 @@ class AddViewController: UIViewController {
     @IBAction func addDatePickerAction(_ sender: UIDatePicker) {
         let datepk = sender
         let dateFormet = DateFormatter()
-        dateFormet.dateFormat = "yyyy/MM/dd HH:mm"
+        dateFormet.dateFormat = "yyyy/MM/dd HH:mm[일정]"
         todoDate = dateFormet.string(from:datepk.date)
     }
     
@@ -67,7 +67,7 @@ class AddViewController: UIViewController {
         }
         let memo = addMemoTextView.text ?? ""
         
-        let param = AddRequest(title: title, date: date, userid: UserDefaults.standard.object(forKey: "save_id") as! String, content: memo )
+        let param = AddRequest(title: title, date: date, userid: UserDefaults.standard.object(forKey: "save_id") as! String, content: memo)
             postAdd(param)
     }
     
